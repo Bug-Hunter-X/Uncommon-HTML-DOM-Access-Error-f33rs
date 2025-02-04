@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+
+  <script>
+    const myDiv = document.getElementById("myDiv");
+    if (myDiv && myDiv.hasOwnProperty("innerHTML")) {
+      console.log(myDiv.innerHTML);
+    } else {
+        console.log("Element or property not found");
+    }
+  </script>
+</body>
+</html>
